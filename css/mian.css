@@ -1,0 +1,56 @@
+*{box-sizing: border-box;}
+
+.nav-nopadding{
+    /* nav-padding不能设置hight高度，否则会影响缩小版竖列导航的弹出 */
+    padding: 10px 45px;
+    border-bottom: 1px solid rgb(236, 236, 236);
+    background-color:white;
+}
+
+.navbar-brand img{
+    display: block;
+    max-width: 100%;
+}
+
+#navbarSupportedContent ul li a{
+    color: black;
+}
+
+#navbarSupportedContent ul li a:hover{
+    color: #e46e2e;
+}
+
+.jumbotron{
+    margin-top: 72px;
+    background-color:white; 
+    height:409px;
+    background-image: url("../img/circle1.svg"),url("../img/circle2.svg"),url("../img//circle3.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.jumbotron img{
+    
+    width: 250px;
+    height: 293px;
+    margin: 0 auto;
+}
+.jumbotron .title{
+    display: block;
+}
+
+.string span{
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.section-grey{
+    background-color: #f5f5f5;
+}
+#JupyterLab img{
+    display: block;
+    /* max-width: 100%;可以使图片自适应，并且缩放自如 */
+    max-width: 100%;
+    height:auto;
+}

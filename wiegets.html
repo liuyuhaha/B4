@@ -17,7 +17,7 @@
         <!-- container可以使得导航条与内容对齐 -->
         
         <a class="navbar-brand" href="#">
-            <img src="img\nav_logo.svg"  height="45" alt="">
+          <img src="img\nav_logo.svg" width="" height="45" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
             <span class="navbar-toggler-icon"></span>
@@ -26,8 +26,8 @@
         <div id="navbarSupportedContent" class="collapse navbar-collapse">
             <!-- bootstrap4中：.ml-auto元素居右；.mr-auto元素居左 -->
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a href="#" class="nav-link">首页<span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">首页</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">安装</a>
@@ -47,8 +47,8 @@
                 <li class="nav-item">
                     <a href="#" class="nav-link">JupyterHub</a>
                 </li>
-                <li class="nav-item">
-                    <a href="wiegets.html" class="nav-link">小工具</a>
+                <li class="nav-item  active">
+                    <a href="wiegets.html" class="nav-link">小工具<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <!-- class:disabled/tabindex="-1"意味着不可选取当前选项，不可框选当前选项 -->
@@ -59,43 +59,10 @@
         
       </nav>
 
-<div class="jumbotron">
-    <div class="row">
-        <div class="col-md-12">
-                <img src="img\main-logo.svg" alt="">
-        </div>      
-   </div>
+<div class="container">
+    <!-- row可以抵消col得padding -->
 </div>
-
-<!-- 加了conatiner中心span会向左偏 -->
-<div class="container string">
-    <!-- 向左偏移的字体会随着加上row类，之后css中margin:0 auto； -->
-    <div class="row">
-        <span>
-            P-roject Jupyter旨在为数十种编程语言开发交互式计算的开源软件，开放标准和服务。
-        </span>
-    </div>
-</div>
-
-<section>
-    <section id="JupyterLab">
-        <div class="section-grey">
-            <div class="lab-preview">
-                <div class="row">
-                        <div class="col-md-6">
-                            <img src="img\jupyterpreview.png" alt="JupyterLab">
-                        </div>
-                        <div class="col-md-6">
-                            <h3>
-                            JupyterLab 1.0：Jupyter的下一代笔记本界面
-                            </h3>
-                        </div>
-                    </div>
-            </div>
-        </div>
-    </section>
-</section>
-<!-- <button type="button" class="btn btn-primary">rimary</button> -->
+<button type="button" class="btn btn-primary">rimary</button>
 <script src="node_modules\jquery\dist\jquery.js"></script>
 <script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
 <script src="js\main.js"></script>
