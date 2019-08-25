@@ -1,8 +1,16 @@
 
-*{
+*{   
     margin: 0;
     padding:0;
 }
+body{
+    width: 100%;
+    box-sizing: border-box;
+}
+.row{
+    margin: 0;
+}
+
 .nav-nopadding{
     /* nav-padding不能设置hight高度，否则会影响缩小版竖列导航的弹出 */
     padding: 10px 45px;
@@ -64,6 +72,9 @@
     max-width: 95%;
     height:auto;
 }
+#JupyterLab img{
+    padding-bottom: 70px;
+}
 
 .jupyterLab-text{
     padding-top:70px;
@@ -103,6 +114,7 @@
 }
 
 .section-white{
+    display: block;
     background-color: white;
     padding-top: 76px;
 }
@@ -120,7 +132,9 @@
     line-height: 49px;
     margin-left: 10px;
 }    
-
+.orange-button a:hover{
+    background-color: #f27624;
+}
 
 @media (max-width: 992px){
     .orange-button{ 
@@ -161,6 +175,7 @@
 }
 
 .section-grey1{
+    display: block;
     background-color: #f5f5f5;
     padding-top: 50px;
 }
@@ -207,6 +222,7 @@
     margin: 0 auto;
     text-align: center;
     padding-top: 40px;
+    padding-bottom: 40px;
 }
 .hubinfo a{
     text-decoration: none;
@@ -215,3 +231,49 @@
     padding: 13px 26px;
 }
 
+.hubinfo a:hover{
+    background-color:#f27624;
+}
+
+.section-header{
+    margin: 12px auto 8px;
+    text-align: center;
+}
+.companies{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px){
+    .companies li{
+        list-style: none;
+        display: inline-block;
+        padding: 2%;
+        vertical-align: middle;
+        width: 18%;
+    }
+}
+.companies li{
+    list-style: none;
+    display: inline-block;
+    padding: 2%;
+    vertical-align: middle;
+}
+
+.companies li a{
+    text-decoration: none;
+}
+
+
+
+.companies li a img{
+    display: block;
+    max-height: 60px;
+    width: 100%;
+}
+
+.container-fluid{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(100% - 10px);
+}
