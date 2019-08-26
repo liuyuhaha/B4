@@ -337,4 +337,33 @@ body{
     text-decoration: none;
     color: white;
 }
+.footer-text li a:hover{
+    color: #e4e4e4;
+}
 
+.follow a{
+    text-decoration: none;
+    color: white;
+}
+.follow a img{
+    background-color:#979797;
+    width: 38px;
+    border-radius: 50%;
+}
+.follow a img:hover{
+    background-color: #e46e2e;
+}
+.follow{
+    display: inline-block;
+    margin: 15px;
+    padding-left: 35px;
+}
+@media (min-width: 992px){
+    .follow {
+        float: right;
+        margin-top: 15px;
+    }
+}
+.gayhub-text:hover{
+    color: #e4e4e4;
+}
