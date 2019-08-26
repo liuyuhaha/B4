@@ -61,7 +61,7 @@ body{
     font-weight: 500;
 }
 
-.section-grey{
+.section-gery{
     background-color: #f5f5f5;
     padding-top: 76px;
 }
@@ -174,7 +174,7 @@ body{
     padding-top: 20px;
 }
 
-.section-grey1{
+.section-gery1{
     display: block;
     background-color: #f5f5f5;
     padding-top: 50px;
@@ -230,11 +230,9 @@ body{
     background-color: #e46e2e;
     padding: 13px 26px;
 }
-
 .hubinfo a:hover{
     background-color:#f27624;
 }
-
 .section-header{
     margin: 12px auto 8px;
     text-align: center;
@@ -259,21 +257,84 @@ body{
     padding: 2%;
     vertical-align: middle;
 }
-
 .companies li a{
     text-decoration: none;
 }
-
-
 
 .companies li a img{
     display: block;
     max-height: 60px;
     width: 100%;
+    opacity: .6;
+    transition: all .3s;
 }
-
+.companies li a img:hover{
+    opacity: 1;
+} 
 .container-fluid{
     margin-left: 10px;
     margin-right: 10px;
     width: calc(100% - 10px);
 }
+
+.arch-logo{
+    text-align: center;
+}
+
+.arch-logo h3{
+    margin: 12px auto 8px;
+}
+
+.arch-logo h4{
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+.architecture .row{
+    padding-top: 40px;
+}
+.card {
+    display: inline-block;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 300px;
+    text-align: center;
+    transition: all .3s;
+}
+.card:hover{
+    box-shadow: 0px 10px 20px rgba(0,0,0, .2);
+    transform: translate3d(0,-2px,0);
+}
+
+.row .card-con{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.card .card-content img{
+    margin-top: 40px;
+}
+/* footer */
+.footer-con{
+    background-color:#979797; 
+    color: white;
+}
+.navbar-text{
+    margin: 15px;
+    padding-left: 35px;
+}
+.footer-text li::after{
+    content: "|";
+    color: white;
+}
+.footer-tex{
+    margin-bottom: 10px;
+}
+.footer-text li{
+    display: inline-block;
+}
+.footer-text li a{
+    text-decoration: none;
+    color: white;
+}
+
